@@ -4,9 +4,7 @@
 //  console.log(10, 'in');
 // })
 // ();
-
-
-// console.log(undefined + 7878 == 7878);
+console.log(-0 + 7878 == 7878);
 
 // function test() {
 //     a=b=10;
@@ -17,7 +15,7 @@
 // test();
 // console.log(a, b);
 
-for (const i=0; i<10; i++);
-{
-    console.log(i);
-}
+// for (const i=0; i<10; i++);
+// {
+//     console.log(i);
+// }

@@ -1,10 +1,11 @@
-const array = ["0", 0, undefined, null, 5]
+const array = ["0", 0, undefined, null, 5, 7, 8]
 let count = 0;
 
 for(let i = 0; i < array.length; i++){
-    if(array[i] != undefined && array[i] != 0 && array[i] != false && array[i] != "" && array[i] != NaN && array[i] != null ){
+    if(array[i]){
         count++;
     }
 }
+
 
 console.log(count);

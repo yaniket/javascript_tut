@@ -1,1 +1,1 @@
-console.log( typeof (typeof null));
+console.log(typeof (typeof NaN));

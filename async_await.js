@@ -11,7 +11,7 @@ async function weather(){
 
     let delhiweather = new Promise((resolve, reject) =>{
         setTimeout(() =>{
-            resolve("100 deg");
+            resolve( 5 && NaN && "" && 6 );
         }, 5000)
     })
 

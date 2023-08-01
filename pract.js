@@ -8,6 +8,7 @@
 //     })
 // }
 
+
 // function xyz(){
 //     return new Promise((res,reject)=>{
 //         try{
@@ -50,3 +51,9 @@
 
 console.log(parseInt("He was 40"));
 console.log(" " - 10)
+
+setTimeout(()=>{
+    console.log()
+})       
+
+

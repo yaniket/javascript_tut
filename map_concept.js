@@ -1,15 +1,17 @@
-const numbers = [1,2,3];  
+// const numbers = [1,2,3];  
 
-let output = numbers.map((x) => {
+// let output = numbers.map((x) => {
    
-    const obj = {
-       value: x
-    }
+//     const obj = {
+//        value: x
+//     }
 
-    return obj;
-}
-);
-console.log(output);
+//     return obj;
+// }
+// );
+// console.log(output);
+
+console.log("HELLO");
 
 
 

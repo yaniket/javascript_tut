@@ -2,6 +2,7 @@ function characterFrequency(str) {
     const frequencyMap = {};
     
     for (const char of str) {
+      console.log(frequencyMap[char]);
       if (frequencyMap[char]) {
         frequencyMap[char]++;
       } else {

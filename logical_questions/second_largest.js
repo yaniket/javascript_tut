@@ -1,17 +1,28 @@
-let a =[1,33,88,101, 2,4, 99, 99.5];
-
-let largest = a[0];
-let secondlargest = a[0];
-
-for(let i = 0; i < a.length; i++){
-     if(a[i] > largest){
-     secondlargest = largest
-     largest =a[i];
-     }
-     else if(a[i] < largest && a[i] > secondlargest){
-        secondlargest = a[i];
-        console.log("secondlargest", secondlargest);
-     }
-    
-     
+function findSecondLargest(arr) {
+   if (arr.length < 2) {
+       return "Array should have at least two elements";
+   }
+   
+   let firstLargest = arr[0];
+   let secondLargest = arr[1];
+   
+   if (firstLargest < secondLargest) {
+       // Swap the values if necessary
+       [firstLargest, secondLargest] = [secondLargest, firstLargest];
+   }
+   
+   for (let i = 2; i < arr.length; i++) {
+       if (arr[i] > firstLargest) {
+           secondLargest = firstLargest;
+           firstLargest = arr[i];
+       } else if (arr[i] > secondLargest && arr[i] !== firstLargest) {
+           secondLargest = arr[i];
+       }
+   }
+   
+   return secondLargest;
 }
+
+const array = [10, 5, 8, 20, 9, 15];
+const secondLargest = findSecondLargest(array);
+console.log("The second largest element is:", secondLargest);

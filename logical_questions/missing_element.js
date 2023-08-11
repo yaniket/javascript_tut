@@ -1,8 +1,9 @@
 function findMissingElements(arr, maxElement) {
-    const allElements = new Array(maxElement + 1).fill(false); // Create a boolean array to mark present elements
+    const allElements = new Array(maxElement).fill(false); // Create a boolean array to mark present elements
     
     console.log("allElements", allElements);
     for (const num of arr) {
+      console.log("num", num);
       allElements[num] = true; // Mark elements present in the array
     }
     
@@ -17,7 +18,7 @@ function findMissingElements(arr, maxElement) {
   }
   
   const inputArray = [1, 3, 5, 9];
-  const maxElement = 10;
+  const maxElement = 32;
   const missingElements = findMissingElements(inputArray, maxElement);
   console.log("Missing elements:", missingElements); // Output: [2, 4, 6, 7, 8, 10]
   

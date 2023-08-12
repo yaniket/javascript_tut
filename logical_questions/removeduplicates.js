@@ -1,7 +1,7 @@
-let arr = [1,2,2,2,2,3,4,2,4,5,3,3,4]
+// let arr = [1,2,2,2,2,3,4,2,4,5,3,3,4]
 
-let newArr = new Set(arr)
-console.log([...newArr])
+// let newArr = new Set(arr)
+// console.log([...newArr])
 
 // More better approach
 

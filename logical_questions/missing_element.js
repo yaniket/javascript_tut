@@ -8,6 +8,8 @@ function findMissingElements(arr, maxElement) {
     }
     
     const missingElements = [];
+    [false,false,false,false]
+    
     for (let i = 1; i <= maxElement; i++) {
       if (!allElements[i]) {
         missingElements.push(i); // Add missing elements to the result array

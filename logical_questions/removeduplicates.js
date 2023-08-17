@@ -1,32 +1,24 @@
-// let arr = [1,2,2,2,2,3,4,2,4,5,3,3,4]
-
-// let newArr = new Set(arr)
-// console.log([...newArr])
-
-// More better approach
-
-// program to remove duplicate value from an array
-
-function getUnique(arr){
+function findDuplicatesUsingHashMap(arr) {
+    const duplicates = [];
+    const numFrequency = {};
+    console.log(numFrequency);
     
-    let uniqueArr = [];
-    let tempArr = [];
-    console.log(uniqueArr);
-    
-    // loop through array
-    for(let i of arr) {
-        if(tempArr.indexOf(i) === -1) {
-          
-            tempArr.push(i);
-        }else{
-            uniqueArr.push(i)
-        }
-    }
-    console.log(uniqueArr);
-}
-
-const array = [1, 2, 3, 2, 56,56,56,565,3];
-
-// calling the function
-// passing array argument
-getUnique(array);
+    let unique = [];
+    for (const num of arr) {
+      if (numFrequency[num]) {
+        duplicates.push(num);
+      } else {
+        numFrequency[num] = true;
+        unique.push(num);
+        console.log("current", numFrequency)
+      }
+      
+      console.log("removing_duplicates", unique);
+    }  
+    return duplicates;
+  }
+  
+  // Example usage:
+  const array1 = [1, 2, 3, 4, 5, 2, 3, 6, 77, 77, 77];
+  const duplicates1 = findDuplicatesUsingHashMap(array1);
+  console.log("Duplicates using Hash Map:", duplicates1); // Output: [2, 3]

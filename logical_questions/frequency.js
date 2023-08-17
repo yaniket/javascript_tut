@@ -25,35 +25,8 @@
   
 //   console.log("a"+"b"+"c"+"d");
 
+// Q Calculate the length of an object
 
-const arr = [1,2,45,6,7,9,9,9];
-// arr.sort();
-
-let firstlargest = arr[0];
-let secondlargest = arr[1];
-let thirdLargest = arr[2];
-
-if(firstlargest < secondlargest){
-    secondlargest = firstlargest;
-}
-if(thirdLargest < secondlargest){
-  
-}
-
-for(let i = 2; i < arr.length; i++){
-    if(arr[i] > firstlargest){
-        firstlargest = arr[i];
-    }
-    
-    else if(arr[i] < firstlargest && arr[i] != firstlargest){
-        secondlargest = arr[i];
-    }
-
-    else if (arr[i] < secondlargest && arr[i] != secondlargest){
-      thirdLargest = arr[i];
-    }
-}
-console.log(thirdLargest);
 
 
 

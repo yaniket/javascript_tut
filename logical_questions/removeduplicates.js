@@ -19,6 +19,6 @@ function findDuplicatesUsingHashMap(arr) {
   }
   
   // Example usage:
-  const array1 = [1, 2, 3, 4, 5, 2, 3, 6, 77, 77, 77];
+  const array1 = [1, 2, 3, 4, 5, 2, 3, 77, 77, 77];
   const duplicates1 = findDuplicatesUsingHashMap(array1);
   console.log("Duplicates using Hash Map:", duplicates1); // Output: [2, 3]
